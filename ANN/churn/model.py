@@ -7,6 +7,6 @@ def ann_model():
     model.add(Dense(units=6, activation='relu'))
     model.add(Dense(units=6, activation='relu'))
     model.add(Dense(units=1, activation='sigmoid'))
-    model.compile(optimizer='adam', loss='binary_crossentropy', metrics='accuracy')
+    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
     return model
